@@ -17,14 +17,15 @@
     <i class="uil uil-bars nav__menu"></i>
     <nav class="navbar font-nav">
       <ul class="navbar__list">
-        <li class="navbar__link">Home</li>
-        <li class="navbar__link">About</li>
-        <li class="navbar__link">Projects</li>
-        <li class="navbar__link">Contact Me</li>
+        <a href="#section--hero"><li class="navbar__link">Home</li></a>
+        <a href="#section--about"><li class="navbar__link">About</li></a>
+        <a href="#section--skills"><li class="navbar__link">Skills</li></a>
+        <a><li class="navbar__link">Projects</li></a>
+        <a><li class="navbar__link">Contact Me</li></a>
       </ul>
     </nav>
   </header>
-  <section class="section section--hero">
+  <section id="section--hero" class="section section--hero">
     <header class="section__header">
       <p class="section__subheading">Hi, I am</p>
       <h2 class="section__heading font-heading">Ketan Prakash</h2>
@@ -36,7 +37,7 @@
       <img src="./assets/cover-pic-web-development-new.svg" class="section--hero__img" alt="">
     </div>
   </section>
-  <section class="section section--about">
+  <section id="section--about" class="section section--about">
     <header class="section__header section--about__header">
       <div class="section--about__img__container">
         <img src="https://ik.imagekit.io/ketanprakash001/Portfolio_assets/Ketan.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1641052779161" alt="" class="section--about__img">
@@ -47,7 +48,21 @@
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsam similique sit nisi inventore odio iste? Porro non pariatur, quia dolorum eligendi error facere harum, voluptatibus amet suscipit molestias dignissimos ipsa quod maxime aspernatur, consequuntur voluptatem minima et illo fugiat deserunt. Nam praesentium dolore reprehenderit ex autem rerum! Quod, consequatur.
     </p>
   </section>
-  <section class="section section--projects"></section>
-  <section class="section sections--contact"></section>
+  <section id="section--skills" class="section section--skills">
+    <header class="section__header section--skills__header">
+      <h2 class="section__heading section--skills__heading font-heading">
+        My Skills
+      </h2>
+    </header>
+    <ul class="skills__list">
+      <li class="skills__item skills__item--c"></li>
+      <li class="skills__item skills__item--cpp"></li>
+      <li class="skills__item skills__item--html"></li>
+      <li class="skills__item skills__item--nodejs"></li>
+      <li class="skills__item skills__item--express"></li>
+      <li class="skills__item skills__item--mongodb"></li>
+      <li class="skills__item skills__item--react"></li>
+    </ul>
+  </section>
 </body>
 </html>

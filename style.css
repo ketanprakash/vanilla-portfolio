@@ -28,6 +28,23 @@
   --clr-accent: #08F;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+  width: 0.6em;
+}
+
+::-webkit-scrollbar-track{
+}
+
+::-webkit-scrollbar-thumb{
+  border: 2px solid var(--clr-primary);
+  background-color: var(--clr-accent);
+  border-radius: 1000vmax;
+}
+
 img{
   width: 100%;
   display: block;
@@ -130,7 +147,7 @@ a{
 
 .section__heading{
   margin-bottom: .7em;
-
+  
 }
 
 .section__subheading{
@@ -224,4 +241,63 @@ a{
   border-radius: 50%;
   margin-bottom: 1.5em;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.section--skills{
+  background-color: var(--clr-accent);
+  color: var(--clr-primary);
+}
+
+.section--skills__header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills__list{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills__item{
+  background-color: var(--clr-primary);
+  color: var(--clr-secondary);
+  margin: 2em;
+  width: 10em;
+  height: 6em;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  background-size: contain;
+  background-position: center;
+}
+
+.skills__item--c{
+  background-image: url(https://www.engineerhack.com/wp-content/uploads/2020/12/c-programming.jpg);
+}
+
+.skills__item--cpp{
+  background-image: url(https://askatul.com/wp-content/uploads/2022/03/Welcome-to-C-Programming.jpg);
+}
+
+.skills__item--html{
+  background-image: url(./assets/html-css-js-icon-set-web-development-logo-javascript-programming-symbol-171669655.jpg);
+}
+
+.skills__item--nodejs{
+  background-image: url(https://images.ctfassets.net/aq13lwl6616q/7cS8gBoWulxkWNWEm0FspJ/c7eb42dd82e27279307f8b9fc9b136fa/nodejs_cover_photo_smaller_size.png?w=700&fm=webp);
+}
+
+.skills__item--express{
+  background-image: url(https://i0.wp.com/iotbyhvm.ooo/wp-content/uploads/2019/01/expressjs.png?fit=872%2C472&ssl=1);
+}
+ 
+.skills__item--mongodb{
+  background-image: url(https://webimages.mongodb.com/_com_assets/cms/kuzt9r42or1fxvlq2-Meta_Generic.png);
+  background-size: cover;
+}
+
+.skills__item--react{
+  background-image: url(https://latitudetechnolabs.com/wp-content/uploads/2022/05/ReactJS-logo.png);
 }
