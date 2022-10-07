@@ -256,9 +256,9 @@ a{
 
 .skills__list{
   list-style-type: none;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  gap:2em;
 }
 
 .skills__item{
@@ -271,6 +271,7 @@ a{
   border-radius: 5px;
   background-size: contain;
   background-position: center;
+  margin: auto;
 }
 
 .skills__item--c{
@@ -278,7 +279,7 @@ a{
 }
 
 .skills__item--cpp{
-  background-image: url(https://askatul.com/wp-content/uploads/2022/03/Welcome-to-C-Programming.jpg);
+  background-image: url(https://www.educative.io/v2api/editorpage/5393602882568192/image/6038586442907648);
 }
 
 .skills__item--html{
